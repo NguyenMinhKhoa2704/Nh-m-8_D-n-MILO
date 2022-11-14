@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:#fefefe;
+}
+.text{
+  font-weight: 400;
+  font-style: italic;
+}
+#header {
+  height: 50px;
+  width: 100%;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;*/ 
+}
+
+#nav-one {
+  height: 45px;
+  background-color: #4d8a54;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+#nav-one li {
+  list-style: none;
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+}
+
+#nav-one li a {
+  padding: 0 8px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 45px;
+}
+
+#nav-one .ti-icons {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+#nav-one .subnav li:hover a {
+  color: #4d8a54;
+}
+
+#nav-one li:hover a {
+  color: #000;
+}
+
+#nav-one .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+#nav-one .subnav a {
+  color: #000;
+}
+
+#nav-one li:hover .subnav {
+  display: block;
+}
+
+#nav-two {
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+#nav-two .nav-img {
+  width: 100%;
+}
+
+#nav-two li {
+  display: inline-block;
+
+}
+
+#nav-two li a {
+  padding: 0 8px;
+  text-decoration: none;
+  color: #000;
+  line-height: 125px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+/**/
+
+#container-content{
+  margin-top: 8px;
+  border-top: 1px solid #ccc;
+}
+
+#content{padding: 2px 32px;}
+
+#content .win-list{
+  display: flex;
+  padding: 16px 0;
+}
+
+.win-list li{
+  list-style-type: none;
+  line-height: 1.5;
+  color: #4d8a54;
+}
+
+.win-list li a{
+  padding-right:8px ;
+  text-decoration: none;
+  color: #000;
+  line-height: 1.5;
+}
+
+.win-list li a:hover{
+  color: #4d8a54;
+}
+
+#content .content-heading{
+  padding-top: 64px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+#content .list-toast{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+#content .items-toast{
+  /*width: 25%;*/
+  text-align: center;
+  cursor: pointer;
+  padding: 1 8px;
+}
+
+#content .items-toast .cars-img{
+  width: 271px;
+}
+
+#content .btn-toast{
+  position: absolute;
+  left: 2.5px;
+  bottom: 0px;
+  line-height: 1.5;
+  font-size: 13px;
+  padding: 5px 101px;
+  font-weight: bolder;
+  background-color: #69b8be;
+  color: #000;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+#content .items-toast:hover .btn-toast{
+  display: block;
+}
+
+#content .btn-toast:hover{
+  background-color: #ffdfef;
+}
+
+#content .list-imgs{
+  border: 2px solid #000000;
+  position: relative;
+}
+
+#content .toast-about{
+  padding-top: 31px;
+  font-weight:600;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 64px;
+}
+
+#content .toast-about:hover .text-toast-t{
+  color: #ff0000;
+}
+
+
+
